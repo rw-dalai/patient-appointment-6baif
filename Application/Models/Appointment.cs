@@ -9,6 +9,7 @@ public class Appointment
     
     public DateTime Created { get; set; }
     
+    // Navigation Property (FK)
     public Patient Patient { get; set; }
     
     public AppointmentState? CurrentStat { get; set; }
