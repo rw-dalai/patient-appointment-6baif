@@ -1,6 +1,3 @@
 namespace Application.Models;
 
-public class TimeSlot
-{
-    
-}
+public record TimeSlot(TimeOnly Start, TimeOnly End);
