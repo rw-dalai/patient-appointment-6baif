@@ -6,7 +6,7 @@ namespace Application.Infrastructure;
 public class AppointmentContext(DbContextOptions options) : DbContext(options)
 {
     
-    // --- DB Sets ---
+    // --- Database Tables ---
     
     public DbSet<Doctor> Doctors => Set<Doctor>();
     
@@ -16,6 +16,8 @@ public class AppointmentContext(DbContextOptions options) : DbContext(options)
     
     public DbSet<AppointmentState> AppointmentStates => Set<AppointmentState>();
 
+    
+    // --- Database Configuration ---
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
