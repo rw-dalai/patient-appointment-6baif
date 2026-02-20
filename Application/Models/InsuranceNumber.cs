@@ -13,6 +13,10 @@ public record InsuranceNumber
 {
     public string Value { get; }
     
+    // --- EF Ctor ---
+    protected InsuranceNumber() {}
+    
+    // --- Business Ctor ---
     // "      1  ".Trim() => "1"
     public InsuranceNumber(string value)
     {
