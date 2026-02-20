@@ -12,7 +12,10 @@ public class Appointment
     // Navigation Property (FK)
     public Patient Patient { get; set; }
     
-    public AppointmentState? CurrentStat { get; set; }
+    // Explicit Shadow FK
+    // public int PatientId { get; set; }
+    
+    public AppointmentState? CurrentState { get; set; }
     
     // --- EF Ctor ---
     protected Appointment() { }

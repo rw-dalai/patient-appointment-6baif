@@ -1,4 +1,11 @@
 namespace Application.Models;
 
-public class CancelledAppointmentState(Appointment appointment, DateTime created) 
-    : AppointmentState(appointment, created);
+public class CancelledAppointmentState : AppointmentState
+{
+    protected CancelledAppointmentState(): base() {}
+
+    public CancelledAppointmentState(Appointment appointment, DateTime created) 
+        : base(appointment, created)
+    {
+    }
+}

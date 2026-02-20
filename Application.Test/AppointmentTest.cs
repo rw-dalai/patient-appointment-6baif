@@ -30,7 +30,7 @@ public class AppointmentTest
     }
     
     [Fact]
-    public void Test1()
+    public void DatabaseSuccessTest()
     {
         using var db = GetDatabase();
         Assert.NotNull(db);

@@ -1,3 +1,5 @@
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace Application.Models;
 
 public abstract class AppointmentState
@@ -6,6 +8,8 @@ public abstract class AppointmentState
     public int Id { get; set; }
     
     public Appointment Appointment { get; set; }
+    
+    public int AppointmentId { get; set; }
     
     public DateTime Created { get; set; }
     
